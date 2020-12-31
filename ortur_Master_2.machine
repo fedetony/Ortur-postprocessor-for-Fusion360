@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>Ortur</vendor>
+
+  <model>Master 2</model>
+
+  <description>Ortur</description>
+
+  <control>GRBL</control>
+
+  <machining additive="no" jet="yes" milling="no" turning="no"/>
+
+  <dimensions depth="430mm" height="1mm" weight="1kg" width="400mm"/>
+
+  <capacities depth="420mm" height="55mm" weight="1000kg" width="400mm"/>
+
+  <png128></png128>
+
+  <mtk></mtk>
+
+  <fusion>
+    <model></model>
+  </fusion>
+
+  <custom>
+    <name></name>
+    <softwareVersion></softwareVersion>
+    <network ip="" port="" protocol=""/>
+    <serial></serial>
+  </custom>
+
+  <tooling maximumToolDiameter="0mm" maximumToolLength="0mm" maximumToolWeight="0kg" numberOfTools="100" toolChanger="yes" toolPreload="yes"/>
+
+  <machiningTime ratio="1" toolChangeTime="15s"/>
+
+  <capabilities maximumBlockProcessingSpeed="1000" maximumFeedrate="9000mm/min" workOffsets="100"/>
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" wcs="0mm 0mm 0mm">
+    <machineAssembly></machineAssembly>
+  </simulation>
+
+  <post>
+    <postProcessor>system://ortur_grbl.cps</postProcessor>
+    <postProperties>
+      <Parameters/>
+    </postProperties>
+    <setupSheet></setupSheet>
+    <setupSheetProperties/>
+  </post>
+
+  <axis actuator="linear" coordinate="X" homePosition="0mm" id="X" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <axis actuator="linear" coordinate="Y" homePosition="0mm" id="Y" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <axis actuator="linear" coordinate="Z" homePosition="0mm" id="Z" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" rapidFeed="0mm/min" resolution="0mm"/>
+
+  <spindle axis="0 0 1" maximumSpeed="1000rpm" minimumSpeed="0rpm">
+    <description>Laser</description>
+  </spindle>
+
+</machine>
